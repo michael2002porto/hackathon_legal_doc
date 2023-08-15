@@ -28,8 +28,7 @@
 <body>
     <!-- Start: Navbar Centered Links -->
     <nav class="navbar navbar-expand-md fixed-top navbar-shrink py-3 navbar-light" id="mainNav">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span>GenAI
-                    Innovators</span></a><button data-bs-toggle="collapse" class="navbar-toggler"
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html"><span>Invoicify</span></a><button data-bs-toggle="collapse" class="navbar-toggler"
                 data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span
                     class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
@@ -39,22 +38,35 @@
                     <li class="nav-item"></li>
                     <li class="nav-item"></li>
                     <li class="nav-item"></li>
-                </ul><a class="btn link-primary shadow" role="button" href="signup.html">Home</a><a
-                    class="btn btn-primary shadow" role="button" href="signup.html">File Processing</a>
+                </ul><a class="btn link-primary shadow" role="button" href="index.html">Home</a><a
+                    class="btn btn-primary shadow" role="button" href="testimonials.html">File Processing</a>
+                    <a class="btn link-primary shadow" role="button" href="archive.html">Archive</a>
             </div>
         </div>
     </nav><!-- End: Navbar Centered Links -->
     <section class="py-5 mt-5">
         <!-- Start: Testimonials -->
         <div class="container py-5">
-            <!-- Start: Clean Button (Scale Hover Effect) --><button class="btn btn-primary" type="button"
-                style="border-radius: 48px;font-size: 20px;background: rgb(28,119,252);font-family: 'Noto Sans Inscriptional Pahlavi', sans-serif;font-weight: bold;width: 202px;border-width: 0px;">Back
-                to Home</button><!-- End: Clean Button (Scale Hover Effect) -->
+            <!-- Start: Clean Button (Scale Hover Effect) -->
+            <a href="index.html">
+                <button class="btn btn-primary" type="button"
+                    style="border-radius: 48px;font-size: 20px;background: rgb(28,119,252);font-family: 'Noto Sans Inscriptional Pahlavi', sans-serif;font-weight: bold;width: 202px;border-width: 0px;">
+                    Back to Home
+                </button>
+            </a>
+            <!-- End: Clean Button (Scale Hover Effect) -->
             <!-- Start: Clean Button (Scale Hover Effect) --><button class="btn btn-primary" type="button"
                 style="border-radius: 48px;font-size: 20px;background: rgb(28,119,252);font-family: 'Noto Sans Inscriptional Pahlavi', sans-serif;font-weight: bold;width: 202px;border-width: 0px;">Send
                 to SAP</button><!-- End: Clean Button (Scale Hover Effect) -->
-            <!-- Start: Clean Button (Scale Hover Effect) --><button class="btn btn-primary" type="button"
-                style="border-radius: 48px;font-size: 20px;background: rgb(28,119,252);font-family: 'Noto Sans Inscriptional Pahlavi', sans-serif;font-weight: bold;width: 202px;border-width: 0px;">Export</button><!-- End: Clean Button (Scale Hover Effect) -->
+            <!-- <div class="dropdown"> -->
+                <button class="btn btn-primary dropdown-toggle" type="button" id="exportDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="border-radius: 48px;font-size: 20px;background: rgb(28,119,252);font-family: 'Noto Sans Inscriptional Pahlavi', sans-serif;font-weight: bold;border-width: 0px;">
+                    Export
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="exportDropdown">
+                    <li><a class="dropdown-item" href="#">CSV</a></li>
+                    <li><a class="dropdown-item" href="#">Excel</a></li>
+                </ul>
+            <!-- </div> -->
             <!-- Start: Alert-info -->
             <div class="alert alert-info" role="alert">
                 <i class="fa fa-warning" style="font-size: 20px;"></i><span class="text-info margin-left"
@@ -168,7 +180,14 @@
                                     class="badge rounded-pill bg-primary align-self-center">Edit</span>
                             </div>
                             <b class="mb-1">178.61</b>
-                        </a></div><!-- End: List group with pills and details -->
+                        </a><!-- End: List group with pills and details -->
+                        <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1">Due_Date</h5><span
+                                    class="badge rounded-pill bg-primary align-self-center">Edit</span>
+                            </div>
+                            <b class="mb-1">08/28/1990</b>
+                        </a></div>
                 </div>
             </div>
         </div><!-- End: Testimonials -->
